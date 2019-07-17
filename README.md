@@ -49,3 +49,11 @@ This diagram below will assist you in understanding the distinct methods I creat
 ![framework_structure_3](framework_structure_3.png)
 
 All the above functionality was built directly into the User class and then I pulled out certain parts of it and used composition. Then I refactored it again and made a reusable class out of it used to represent any kind of data.
+
+**class User**
+
+- A user will have one distinct piece of data called `data`. It will be an object that stores all the different properties that deescribe a very particular user such as their name, age and so on. I marked the property as being `private`. This modifier means we cannot access this data property from outside this class. The whole idea here is not to allow other developers to reach into a user and mess with its data manually.
+
+Instead, developers will have to use other methods to manipulate the data, specifically `get` and `set` methods. The purpose of `get` is to pass in the name of some property we want to retrieve. If a user has some data tied to it, we can retrieve it by calling `get` and passing in a string of `name` like so: `get('name')` or with age: `get('age')`. Get can return any type of data and thats why I annotated the return type in the diagram as either a string or a number. Eventually, this return type will be improved.
+
+`set()` method will be used to change any data related to a user. It will take in some object that describes how to update information on a user like so: `set(age: 39)`.
