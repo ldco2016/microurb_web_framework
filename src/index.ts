@@ -1,6 +1,8 @@
 import { User } from "./models/User";
 
-const user = new User({ name: "Daniel", age: 39 });
+const user = new User({});
+
+user.set({ age: 999 });
 
 console.log(user.get("name"));
 console.log(user.get("age"));
