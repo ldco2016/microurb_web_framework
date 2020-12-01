@@ -9,3 +9,8 @@ export class Attributes<T> {
     Object.assign(this.data, update);
   }
 }
+
+
+type BestName = 'daniel';
+
+const printName = (name: string): void => {};
