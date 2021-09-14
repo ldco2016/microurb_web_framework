@@ -1,8 +1,10 @@
-# microurb_web_framework
+# Microurb.js
 
 ![framework_structure](framework_structure.png)
 
-Inside of this framework I have two types of classes:
+Microurb supplies structure to JavaScript-heavy applications by providing models with custom events, collections with a rich API of enumerable functions, views with declarative event handling and connects it all to your existing application over a RESTful JSON interface.
+
+Inside of the MicrourbJS framework I have two types of classes:
 
 1. Model Classes
 
@@ -12,7 +14,7 @@ The Model classes are those inside the framework that are meant to handle some d
 
 The View classes are responsible for producing HTML and displaying it to the user. It is also responsible for handling events caused by the user like clicks, typing, pressing the enter key and so on.
 
-This web framework was meant to start you off with something simplistic at the beginning, but this framework is also capable of being used to build very complex applications.
+MicrourbJS was meant to start you off with something simplistic at the beginning, but this framework is also capable of being used to build very complex applications.
 
 You can start off with an application that tells you something about a user such as a `name` property and an `age` property similar to what you see in the mockup below:
 
